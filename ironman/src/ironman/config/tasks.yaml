@@ -1,0 +1,59 @@
+simulate_input_task:
+  description: Generate a realistic test scenario based on user-provided context or intent
+  expected_output: A detailed scenario that includes user intent, location, environment, and urgency
+  agent: input_simulator
+
+threat_assessment_task:
+  description: Evaluate threats in the current simulated input
+  expected_output: Threat level and description
+  agent: threat_assessment
+
+combat_mode_recommendation_task:
+  description: Recommend a suitable combat strategy
+  expected_output: A combat/defense plan with reasoning
+  agent: combat_tactics
+
+weapon_activation_task:
+  description: Determine if weapons should be activated, and which ones
+  expected_output: Activation commands and justification
+  agent: weapons_controller
+
+shield_activation_task:
+  description: Decide if shielding is needed based on threat/environment
+  expected_output: Shield activation plan
+  agent: defense_shield
+
+environment_monitoring_task:
+  description: Report temperature, air quality, radiation, etc.
+  expected_output: Summary of current environmental status
+  agent: environmental_monitor
+
+health_monitoring_task:
+  description: Evaluate user biometrics for fatigue, stress, or injury
+  expected_output: Summary of user's current health
+  agent: biometrics_monitor
+
+diagnostics_task:
+  description: Scan the suit for faults or failures
+  expected_output: Diagnostic summary
+  agent: diagnostics
+
+mobility_support_task:
+  description: Assist with walking, lifting, or terrain adaptation
+  expected_output: Instructions or adjustments to movement profile
+  agent: mobility_assist
+
+energy_check_task:
+  description: Evaluate power reserves and suggest optimizations
+  expected_output: Current battery status and power plan
+  agent: energy_management
+
+emergency_check_task:
+  description: Trigger emergency response if criteria met
+  expected_output: Emergency action (or not) and explanation
+  agent: emergency_response
+
+strategic_decision_task:
+  description: Integrate all outputs and guide full suit behavior
+  expected_output: Suit mode, actions, energy plan, and AI focus
+  agent: suit_brain
